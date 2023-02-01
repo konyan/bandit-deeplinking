@@ -1,12 +1,12 @@
 <html>
 	<head>
-		<title>Bandit Redirect example</title>
+		<title>Bandit DEEPLINKING example</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<script>
 			document.addEventListener("DOMContentLoaded", function (event) {
 				var links = document.querySelectorAll("a");
-				var baseUri = "exp://bandit";
+				var baseUri = "exp://bandit/";
 
 				// Take the uri from the params
 				var qs = decodeURIComponent(document.location.search);
