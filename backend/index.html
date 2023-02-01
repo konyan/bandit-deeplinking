@@ -6,7 +6,7 @@
 		<script>
 			document.addEventListener("DOMContentLoaded", function (event) {
 				var links = document.querySelectorAll("a");
-				var baseUri = "exp://bandit/";
+				var baseUri = "exp://banditapp/";
 
 				// Take the uri from the params
 				var qs = decodeURIComponent(document.location.search);
@@ -16,7 +16,7 @@
 
 				// Update the link urls
 				for (var i = 0; i < links.length; ++i) {
-					links[i].href = links[i].href.replace("exp://bandit/", baseUri);
+					links[i].href = links[i].href.replace("exp://banditapp/", baseUri);
 					console.log(links[i].href);
 				}
 
@@ -43,16 +43,16 @@
 		<h2>BANDIT DEEP LINKING EXAMPLE</h2>
 		<ul style="margin-left: 0; padding-left: 15px">
 			<li>
-				<a href="exp://bandit/"> Go back with no params </a>
+				<a href="exp://192.168.1.108:19000/"> LocalGo back with no params </a>
 			</li>
 			<li>
-				<a href="exp://bandit/message=Hello%20World">
-					Pass back a message of "hello world"
+				<a href="exp://192.168.1.108:19000/message=Hello%20World">
+					LocalGo Pass back a message of "hello world"
 				</a>
 			</li>
 			<li>
-				<a href="exp://bandit/authToken=23xbdbb21b3">
-					Pass back some fake auth token
+				<a href="exp://192.168.1.108:19000/authToken=23xbdbb21b3">
+					LocalGo Pass back some fake auth token
 				</a>
 			</li>
 		</ul>
